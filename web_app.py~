@@ -2,15 +2,7 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 #SQLAlchemy stuff
-<<<<<<< HEAD
-#from database_setup import Base Person <--- Import your tables here!!
-#from sqlalchemy import create_engine
-#from sqlalchemy.orm import sessionmaker
-#engine = create_engine('sqlite:///crudlab.db')
-#Base.metadata.creat_all(engine)
-#DBSession = sessionmaker(bind=engine)
-#session = DBSession()
-=======
+
 from database_setup import Base, User #<--- Import your tables here!!
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
@@ -18,7 +10,7 @@ engine = create_engine('sqlite:///Webpage.db')
 Base.metadata.create_all(engine) 
 DBSession = sessionmaker(bind=engine)
 session = DBSession()
->>>>>>> ad0ccbb6024bfe545e1cc0014d4d58300975910f
+
 #YOUR WEB APP CODE GOES HERE
 
 @app.route('/')
@@ -54,6 +46,7 @@ def edit_profile(user_id):
         	# redirect user to the page that views the user's new profile
         	return redirect(url_for('view_profile'))
 
+#fix login page after everything is done
 @app.route('/login', methods=['GET', 'POST'])
 def login_page():
 	if request.method == 'GET':
