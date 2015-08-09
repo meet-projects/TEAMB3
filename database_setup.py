@@ -10,11 +10,11 @@ Base = declarative_base()
 class User (Base):
 	__tablename__ = 'user'
 	id = Column(Integer, primary_key=True)
-	First_name = Column(String(60))
-	Last_name = Column(String(60))
-	Username = Column(String(60))
-	Password = Column(String(60))
-	Bio = Column(String(140))
+	first_name = Column(String(60))
+	last_name = Column(String(60))
+	username = Column(String(60))
+	password = Column(String(60))
+	bio = Column(String(140))
 	
 
 	

@@ -15,8 +15,8 @@ First Name:<input type="text” name="firstname”><br>
 
 Last Name:<input type="text" name="lastname"><br>
 Note: Your first and last name wont be abled to view by other users<br><br>
-Username:<input type="text" name="username"><br>
-Password:<input type="password" name="password"><br>
+Username:<input type="text" name="Username"><br>
+Password:<input type="password" name="pwd"><br>
 Bio:<input type="text" name="bio"><br><br>
 
 <input type="submit" value="Submit">

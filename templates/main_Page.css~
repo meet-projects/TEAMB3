@@ -1,0 +1,10 @@
+
+
+body {
+    font-family: "Times New Roman", Times, serif;
+background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-position: fixed;
+} 
+h1 {color:black; text-align:center;}
+
