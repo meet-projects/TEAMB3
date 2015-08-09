@@ -2,6 +2,15 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 #SQLAlchemy stuff
+<<<<<<< HEAD
+#from database_setup import Base Person <--- Import your tables here!!
+#from sqlalchemy import create_engine
+#from sqlalchemy.orm import sessionmaker
+#engine = create_engine('sqlite:///crudlab.db')
+#Base.metadata.creat_all(engine)
+#DBSession = sessionmaker(bind=engine)
+#session = DBSession()
+=======
 from database_setup import Base, User #<--- Import your tables here!!
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
@@ -9,6 +18,7 @@ engine = create_engine('sqlite:///Webpage.db')
 Base.metadata.create_all(engine) 
 DBSession = sessionmaker(bind=engine)
 session = DBSession()
+>>>>>>> ad0ccbb6024bfe545e1cc0014d4d58300975910f
 #YOUR WEB APP CODE GOES HERE
 
 @app.route('/')

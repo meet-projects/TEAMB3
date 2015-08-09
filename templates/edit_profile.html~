@@ -1,6 +1,0 @@
-First name:<input type = "text" name = "First name"><br>
-Last name:<input type = "text" name = "Last name"><br>
-Bio:<input type = "text" name = "Bio"><br>
-Username:<input type = "text" name = "Username"><br>
-Password:<input type = "password" name = "Password"><br>
-Email adress:<input type = "text" name = "email"><br>

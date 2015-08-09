@@ -2,6 +2,7 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 #SQLAlchemy stuff
+
 from database_setup import Base, User #<--- Import your tables here!!
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
@@ -9,6 +10,7 @@ engine = create_engine('sqlite:///Webpage.db')
 Base.metadata.create_all(engine) 
 DBSession = sessionmaker(bind=engine)
 session = DBSession()
+
 #YOUR WEB APP CODE GOES HERE
 
 @app.route('/')
