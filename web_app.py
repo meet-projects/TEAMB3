@@ -6,7 +6,7 @@ app = Flask(__name__)
 #from sqlalchemy import create_engine
 #from sqlalchemy.orm import sessionmaker
 #engine = create_engine('sqlite:///crudlab.db')
-#Base.metadata.bind = engine
+#Base.metadata.creat_all(engine)
 #DBSession = sessionmaker(bind=engine)
 #session = DBSession()
 #YOUR WEB APP CODE GOES HERE
