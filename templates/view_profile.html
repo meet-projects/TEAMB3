@@ -51,8 +51,9 @@
 <div id="signout">
 <a href="{{ url_for('main_page') }}">Sign out</a>
 </div>
-
-
+<div id"delete_profile">
+<a href="{{ url_for('delete_profile', user_id = person.id) }}">Deactivate</a>
+</div>
 </body>
 
 

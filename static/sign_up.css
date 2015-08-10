@@ -1,11 +1,26 @@
-body
+
 h1{
   text-align:center;
 }
 body {background-image:url('background.jpg');}
 
-}
 
 .middlediv{
 text-align:center;
+}
+.connect{
+width:150px;
+height:120px;
+}
+
+
+#main_header{
+font-size:20px;
+vertical-align:50px;
+font-family: "Formal Script BT", Times, serif; text-align:center;}
+
+#header{
+font-size:15px;
+vertical-align:10px;
+font-family: "Adera", Times, serif; text-align:center;
 }

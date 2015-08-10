@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!--<link rel ="stylesheet" type="text/css" href="edit_Profile.css">-->
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='edit_profile.css') }}">
 <title>edit</title>
 </head>
 <body>
@@ -10,7 +10,7 @@
 <h1>Edit Your Profile</h1>
 
 </header>
-<form>
+<form method = 'POST'>
 Username:<input type="text" name="username"><br>
 Password:<input type="password" name="password"><br>
 Bio:<input type="text" name="bio"><br><br>

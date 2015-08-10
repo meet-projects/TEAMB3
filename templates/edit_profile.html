@@ -1,20 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!--<link rel ="stylesheet" type="text/css" href="edit_Profile.css">-->
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='edit_profile.css') }}">
 <title>edit</title>
 </head>
 <body>
+<body>
 
-<header>
+<div id="title">
+<img class = "connect" src = "{{ url_for('static', filename='connect.gif') }}" alt = "connecting Humans worlwide">
+
+<span id="main_header">
+	HOWDY
+</span>
+<span id="header">Connecting People Worldwide</span>
+</div>
+<div id=edit_profile>
 <h1>Edit Your Profile</h1>
 
-</header>
+
 <form method = 'POST'>
 Username:<input type="text" name="username"><br>
 Password:<input type="password" name="password"><br>
 Bio:<input type="text" name="bio"><br><br>
 
 <input type="submit" value="Submit">
+</div>
 </form>
 </html>

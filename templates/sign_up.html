@@ -5,18 +5,21 @@
 <title>Sign up</title>
 </head>
 <body>
+<div id="title">
+<img class = "connect" src = "{{ url_for('static', filename='connect.gif') }}" alt = "connecting Humans worlwide">
 
+<span id="main_header">
+	HOWDY
+</span>
+<span id="header">Connecting People Worldwide</span>
+</div>
 
 <br>
 <br>
 <br>
 <br>
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
 <div class="middlediv">
 <h1>Sign Up</h1>
 <h2>Make a profile today</h2>
@@ -29,7 +32,7 @@ Last Name:<input type="text" name="lastname"><br>
 Note: Your first and last name won't be viewable by other users<br><br>
 Username:<input type="text" name="username"><br><br>
 Password:<input type="password" name="password"><br><br>
-Bio:<input type="text" name="bio"><br><br>
+Bio:<input type="text" name="bio">(Up to 140 characters)<br><br>
 <br>
 <input type="submit" value="Submit">
 <input type="submit" value="Delete">
