@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html>
 
+<head>
+<link rel="stylesheet" type="text/css" href="view_profile.css">
+</head>
+
 <body>
 
 <h1> Profile Page</h1><br>
 <a href="{{ url_for('main_page') }}">Search</a><br><br>
 
-Username <p>{{user.username}}</p></br>
-Bio</br>
-<div><p>{{user.bio}}</p></div>
+<p id="p2">Username</p> <p id="p1">{{person.username}}</p></br>
+<p id="p3">Bio</p>
+<div><p>{{person.bio}}</p></div>
 <br>
 
 <table border=1>
-<tr><th colspan="2">  Interests</th></tr>
+<tr><th colspan="2" id="th2"> Interests</th></tr>
 <tr><td>Books</td><td>The kite runner, Looking for Alaska</td>
 </tr>
 <tr><td>Movies</td></tr>
