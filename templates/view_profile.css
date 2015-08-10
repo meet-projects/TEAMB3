@@ -1,0 +1,27 @@
+body
+h1{
+  color:Blue;
+  text-align:center;
+}
+table, th, td {
+
+ border: 3px solid blue;
+
+ padding:10px;
+}
+#th2 {color:#EF1000;}
+
+h1{font-family:"Arial",
+
+Times, serif;}
+body {background-image:url('blue.jpg');}
+#p2 {color:black;
+     font-size:125%;
+}
+#p3 {color:black;
+     font-size:125%;
+}
+
+td {color:#135126}
+
+
