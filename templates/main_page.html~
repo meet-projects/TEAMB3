@@ -11,7 +11,7 @@
 </head>
 
 <body>
-<h1>Our MEET Y2 project</h1>
+
 <div id="title">
 <img class = "connect" src = "{{ url_for('static', filename='connect.gif') }}" alt = "connecting Humans worlwide">
 
@@ -23,12 +23,19 @@
 <br>
 <br>
 <br>
-<div id="content">
-<div class = "window">
 
-<a href="{{ url_for('sign_up') }}">Sign Up</a><br>
-<a href="{{ url_for('login_page') }}">Log In</a>
+<div id = "div_for_login>
+<form action = "{{ url_for('login_page')}}">
+<input type = "submit" value = "Log In" id = "LOGIN_PAGE">
+</form>
 </div>
+<br>
+<div id = "div_for_sign_up>
+<form action = "{{ url_for('sign_up')}}">
+<input type = "submit" value = "Sign Up" id = "SIGN_UP">
+</form>
+</div>
+
 <div>
 <br>
 <br>

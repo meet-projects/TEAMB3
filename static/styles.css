@@ -34,23 +34,31 @@ font-family: "Formal Script BT", Times, serif; text-align:center;}
 #header{
 font-size:26px;
 vertical-align:150px;
-font-family: "Story Book", Times, serif; text-align:center;
+font-family: "Adera", Times, serif; text-align:center;
 }
 #login_button {
 height:50px;
 width:100px;
 }
+#div_for_login{
+text-align:center;
+}
 
 
-.window {
-    width: 200px;
-    height: 100px;
-    padding: 100 px;
-    border: 10px solid navy;
-    margin: 50px;
-    float: center;
-    margin: 0 0 10px 700px;
+#div_for_sign_up{
+text-align:center;
+}
 
+#LOGIN_PAGE {
+    width:100px;
+    height:50px;
+    text-align:center;
+}
+
+#SIGN_UP {
+    width:100px;
+    height:50px;
+    text-align:center;
 
 }
 

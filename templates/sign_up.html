@@ -1,25 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel ="stylesheet" type="text/css" href="sign_up.css">
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='sign_up.css') }}">
 <title>Sign up</title>
 </head>
 <body>
 
-<header>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="middlediv">
 <h1>Sign Up</h1>
 <h2>Make a profile today</h2>
-</header>
+
 <form method = 'POST' action = "{{url_for('sign_up')}}">
 First Name:<input type="text" name="firstname"><br>
-
+<br>
 Last Name:<input type="text" name="lastname"><br>
+<br>
 Note: Your first and last name won't be viewable by other users<br><br>
-Username:<input type="text" name="username"><br>
-Password:<input type="password" name="password"><br>
+Username:<input type="text" name="username"><br><br>
+Password:<input type="password" name="password"><br><br>
 Bio:<input type="text" name="bio"><br><br>
-
+<br>
 <input type="submit" value="Submit">
 <input type="submit" value="Delete">
 </form>
+</div>
 </html>

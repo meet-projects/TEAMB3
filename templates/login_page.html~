@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!--<link rel ="stylesheet" type="text/css" href="login.css">-->
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='login.css') }}">
 <title>Log In</title>
 </head>
 <body>
 
-<header>
-<h1>Log In</h1>
-<h2>Glad to have you back!</h2>
-</header>
-<body>
+<div class="login">
+<h1>Log In</h1><br><br>
+<h2>Welcome back!</h2><br><br>
+
+
 <form method = 'POST' action = "{{url_for('login_page')}}">
-Username:<input type="text" name="username"><br>
-Password:<input type="password" name="password"><br>
+Username:<input type="text" name="username"><br><br>
+Password:<input type="password" name="password"><br><br>
 
 <input type="submit" value="Submit">
 
@@ -22,5 +22,6 @@ Password:<input type="password" name="password"><br>
   {% endif %}
 
 </form>
+</div>
 </body>
 </html>

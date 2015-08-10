@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel ="stylesheet" type="text/css" href="sign_up.css">
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='sign_up.css') }}">
 <title>Sign up</title>
 </head>
 <body>
 
-<header>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="middlediv">
 <h1>Sign Up</h1>
 <h2>Make a profile today</h2>
-</header>
-<form method = 'POST'>
+
+<form method = 'POST' action = "{{url_for('sign_up')}}">
 First Name:<input type="text" name="firstname"><br>
 
 Last Name:<input type="text" name="lastname"><br>
@@ -22,4 +33,5 @@ Bio:<input type="text" name="bio"><br><br>
 <input type="submit" value="Submit">
 <input type="submit" value="Delete">
 </form>
+</div>
 </html>
