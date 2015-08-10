@@ -59,7 +59,7 @@ def edit_profile(user_id):
 		person.bio = new_bio
 		session.commit()
         	# redirect user to the page that views the user's new profile
-        	return redirect(url_for('view_profile'))
+        	return redirect(url_for('view_profile', user_id = person.id))
 
 #fix login page after everything is done
 @app.route('/login', methods=['GET', 'POST'])
