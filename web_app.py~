@@ -44,8 +44,8 @@ def edit_profile(user_id):
 		return render_template('edit_profile.html', person = person)
 	else:
         	# read form data
-        	new_firstname = request.form['firstname']
-        	new_lastname = request.form['lastname']
+        	#new_firstname = request.form['firstname']
+        	#new_lastname = request.form['lastname']
         	new_username = request.form['username']
         	new_password = request.form['password']
 		new_bio = request.form['bio']
@@ -57,6 +57,7 @@ def edit_profile(user_id):
 		person.username = new_username
 		person.password = new_password
 		person.bio = new_bio
+		print("commiting")
 		session.commit()
         	# redirect user to the page that views the user's new profile
         	return redirect(url_for('view_profile', user_id = person.id))
