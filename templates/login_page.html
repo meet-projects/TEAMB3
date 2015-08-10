@@ -11,11 +11,16 @@
 <h2>Welcome Back</h2>
 </header>
 <body>
-<form>
-Username:<input type="text" name="Username"><br>
-Password:<input type="password" name="pwd"><br>
+<form method = 'POST' action = "{{url_for('login_page')}}">
+Username:<input type="text" name="username"><br>
+Password:<input type="password" name="password"><br>
 
 <input type="submit" value="Submit">
+
+ {% if error %}
+    <p class=error><strong>Error:</strong> {{ error }}
+  {% endif %}
+
 </form>
 </body>
 </html>
