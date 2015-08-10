@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel ="stylesheet" type="text/css" href="main_Page.css">
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='main_page') }}">
   <title>
-    HAWDY
+    HOWDY
   </title>
-  <link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
+  
   
   
 </head>
@@ -16,7 +16,7 @@
 <h3>Connecting People Worldwide</h3>
 <img class = "connect" src = "connect.gif" alt = "connecting with people worlwide" align="right" ><br>
 <input type="submit" value="Sign Up"><br><br>
-<input type="submit" value="Log IN">
+<input type="submit" value="Log In">
 <br>
 <br>
 <br>
