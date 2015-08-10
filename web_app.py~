@@ -23,7 +23,7 @@ def view_profile(user_id):
 @app.route('/signup', methods = ['GET', 'POST'])
 def sign_up():
 	if request.method == 'GET':
-		return render_template('main_page.html')
+		return render_template('sign_up.html')
 	else:	
 		new_firstname = request.form['firstname']
 		new_lastname = request.form['lastname']
