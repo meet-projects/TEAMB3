@@ -44,22 +44,19 @@ def edit_profile(user_id):
 		return render_template('edit_profile.html', person = person)
 	else:
         	# read form data
-        	new_firstname = request.form['firstname']
-        	new_lastname = request.form['lastname']
         	new_username = request.form['username']
         	new_password = request.form['password']
 		new_bio = request.form['bio']
 
         	# MISSING CODE HERE FOR UPDATING THE USER
 		new_person = session.query(User).filter_by(id = user_id).first()
-		person.first_name = new_firstname
-		person.last_name = new_lastname
 		person.username = new_username
 		person.password = new_password
 		person.bio = new_bio
+		print("commiting")
 		session.commit()
         	# redirect user to the page that views the user's new profile
-        	return redirect(url_for('view_profile'))
+        	return redirect(url_for('view_profile', user_id = person.id))
 
 #fix login page after everything is done
 @app.route('/login', methods=['GET', 'POST'])
