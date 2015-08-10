@@ -15,24 +15,24 @@
 </div>
 <div id="delete_profile">
 <h1>Deactivate</h1>
+<br>
+<br>
+<br>
+<br>
 <p>Are you sure you want to Deactivate </p>
+<form method = 'POST' action = "{{url_for('delete_profile', user_id = person.id)}}">
 <input type="submit" value="Yes">
+</form>
+<form action = "{{url_for('view_profile', user_id = person.id)}}">
 <input type="submit" value="Cancel">
+</form>
 </div>
 <br>
 <br>
 <br>
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
+
 We'll be sad to see you go :(
 </body>
 </html>
