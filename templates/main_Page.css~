@@ -6,7 +6,16 @@ background-image: url("background.jpg");
   
 } 
 h1 {color:black; text-align:center;}
+
+h2 {color:black; text-align:center; font-size: 250%;
+font-family: "Script MJ Bold", Times, serif;}
 .connect{
 width:400px;
 height:300px;
+}
+
+.connecting{
+width:600px;
+height:500px;
+
 }
