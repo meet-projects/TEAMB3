@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!--<link rel ="stylesheet" type="text/css" href="sign up.css">-->
+<link rel ="stylesheet" type="text/css" href="sign_up.css">
 <title>Sign up</title>
 </head>
 <body>
@@ -10,11 +10,11 @@
 <h1>Sign Up</h1>
 <h2>Make a profile today</h2>
 </header>
-<form>
-First Name:<input type="text” name="firstname”><br>
+<form method = 'POST' action = "{{url_for('sign_up')}}">
+First Name:<input type="text" name="firstname"><br>
 
 Last Name:<input type="text" name="lastname"><br>
-Note: Your first and last name wont be abled to view by other users<br><br>
+Note: Your first and last name won't be viewable by other users<br><br>
 Username:<input type="text" name="username"><br>
 Password:<input type="password" name="password"><br>
 Bio:<input type="text" name="bio"><br><br>

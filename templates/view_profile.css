@@ -1,27 +1,71 @@
-body
+
+h5{ color:white;
+    text-align:center;
+    font-size:300%;}
 h1{
-  color:Blue;
-  text-align:center;
+  color:white;
+
 }
-table, th, td {
 
- border: 3px solid blue;
+h3{text-align:center;
+   width:50%;}
 
- padding:10px;
-}
-#th2 {color:#EF1000;}
-
-h1{font-family:"Arial",
+h5{font-family:"Arial",
 
 Times, serif;}
-body {background-image:url('blue.jpg');}
-#p2 {color:black;
-     font-size:125%;
-}
-#p3 {color:black;
-     font-size:125%;
-}
 
-td {color:#135126}
+#header { background: black;
+         
+          text-align:center;
+          padding: 4px;
+	  width: 50%;}
+#interests {float:left;
+            line-height:30px;
+            background: gray;
+            width:15%;
+            height:70%;
+	    text-align:center;
+	    font-size:150%;}
+#choose {background:white;
+         color:solid black;
+         font-family: "Arial", serif;
+         float:left;
+         height:100%;
+	 line-height:30px;
+	 text-align:center;
+	 width:35%;}
 
+#bio {background:white;
+      font-size:100%;
+      width:15%;}
+
+#username {background:white;
+	   font-size:100%;
+	   width:15%;
+           color:white;}
+#p2 {background:#D1D1D1;
+     width:15%;
+line-height:450%;}
+para {text-align:center;}
+h7{text-align:center;}
+h4{padding:5px;}
+
+#p4 {background:#D1D1D1;
+     width:40%;
+     line-height:1000%;
+     }
+h2{font-size:140%;
+   color:black;}   
+
+body{background-image:url('tree.png');}
+#edit {padding:15px;}
+#signout {padding:15px;}
+#head {background-image:url('black.jpg');
+       line-height:500%;}
+#head2 {background:black;
+	width:25%;
+	text-align:center;
+	margin: 0 auto;
+        }
+        
 

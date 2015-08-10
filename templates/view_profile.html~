@@ -7,15 +7,16 @@
 
 <body>
 
-<h1> Profile Page</h1><br>
+<div id="head"><div id="head2"><h5> Profile Page</h5></div></div><br>
 <a href="{{ url_for('main_page') }}">Search</a><br><br>
 
-<p id="p2">Username</p> <p id="p1">{{person.username}}</p></br>
-<p id="p3">Bio</p>
-<div><p>{{person.bio}}</p></div>
-<br>
+<div id="username"><h2>Username</h2></div> 
+<div id="p2"><p>{{person.username}}</p></div></br>
+<div id="bio"><h2>Bio</h2></div>
+<div id="p4"><p>{{person.bio}}</p></div>
+<br><br><br><br>
 
-<table border=1>
+<!--<table border=1>
 <tr><th colspan="2" id="th2"> Interests</th></tr>
 <tr><td>Books</td><td>The kite runner, Looking for Alaska</td>
 </tr>
@@ -30,12 +31,24 @@
 <!-- Status<br>
 <p>Status #2</p><br><br>-->
 
+<div id="header">
+<h1>Interests</h1>
+</div>
+<div id="interests">
+<div><h7>Books</h7></div><br>
+<div><h7>Movies</h7></div><br>
+<div><h7>Hobbies</h7></div><br>
+</div>
+<div><h4> I like The Kite Runner, Lookin or Alaska etc...</h4></div>
+<div><h4>Inglorious Bastards, Titanic</h4></div>
+<div><h4>Biking, Dancing</h4></div>
+<br><br><br><br><br><br>
  
 
-<div>
+<div id="edit">
 <a href="{{ url_for('edit_profile') }}">Edit</a>
 </div>
-<div>
+<div id="signout">
 <a href="{{ url_for('main_page') }}">Sign out</a>
 </div>
 
