@@ -19,7 +19,7 @@ def main():
 
 @app.route('/profile/<int:user_id>')
 def view_profile(user_id):
-	person = session.query(User).filter_by(id=user_id).first()
+	person = session.query(User).filter_by(id = user_id).first()
 	return render_template('view_profile.html', person = person)
 
 @app.route('/signup', methods = ['GET', 'POST'])
@@ -74,7 +74,7 @@ def login_page():
 			error = 'User does not exist'
 			return render_template('login_page.html', error = error)
 		else:
-        		return redirect(url_for('view_profile', user_id = person.id, error = error))
+        		return redirect(url_for('view_profile', user_id = person.id))
 		
 
 @app.route('/delete/<int:user_id>', methods = ['GET', 'POST'])

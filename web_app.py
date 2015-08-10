@@ -14,12 +14,12 @@ session = DBSession()
 #YOUR WEB APP CODE GOES HERE
 
 @app.route('/')
-def main():
+def main_page():
 	return render_template('main_page.html')
 
 @app.route('/profile/<int:user_id>')
 def view_profile(user_id):
-	person = session.query(User).filter_by(id=user_id).first()
+	person = session.query(User).filter_by(id = user_id).first()
 	return render_template('view_profile.html', person = person)
 
 @app.route('/signup', methods = ['GET', 'POST'])
