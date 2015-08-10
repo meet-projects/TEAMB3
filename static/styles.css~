@@ -1,1 +1,66 @@
 /* Add your CSS Code here */
+
+
+
+body {
+    font-family: "Times New Roman", Times, serif;
+background-image: url("background.jpg");
+  
+} 
+h1 {color:black;text-align:center; }
+
+h2 {color:black;  font-size: 250%;
+font-family: "Formal Script BT", Times, serif; text-align:center;}
+h3{
+text-align:center;
+}
+
+.connect{
+width:400px;
+height:450px;
+}
+
+#sign_in_button {
+height:50px;
+width:100px;
+
+}
+
+#main_header{
+font-size:100px;
+vertical-align:200px;
+font-family: "Formal Script BT", Times, serif; text-align:center;}
+
+#header{
+font-size:26px;
+vertical-align:150px;
+}
+#login_button {
+height:50px;
+width:100px;
+}
+
+
+.window {
+    width: 200px;
+    height: 100px;
+    padding: 100 px;
+    border: 10px solid navy;
+    margin: 50px;
+    float: center;
+    margin: 0 0 10px 700px;
+
+
+}
+
+.title {
+    position: relative;
+    left: 30px;
+}
+
+.connecting{
+width:400px;
+height:200x;
+
+}
+

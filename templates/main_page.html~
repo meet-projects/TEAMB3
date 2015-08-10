@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel=stylesheet type=text/css href="{{ url_for('static', filename='main_page') }}">
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
   <title>
     HOWDY
   </title>
@@ -12,15 +12,28 @@
 
 <body>
 <h1>Our MEET Y2 project</h1>
-<h2>HAWDY</h2>
-<h3>Connecting People Worldwide</h3>
-<img class = "connect" src = "connect.gif" alt = "connecting with people worlwide" align="right" ><br>
-<input type="submit" value="Sign Up"><br><br>
-<input type="submit" value="Log In">
+<div id="title">
+<img class = "connect" src = "{{ url_for('static', filename='connect.gif') }}" alt = "connecting Humans worlwide">
+
+<span id="main_header">
+	HOWDY
+</span>
+<span id="header">Connecting People Worldwide</span>
+</div>
 <br>
 <br>
 <br>
-<img class = "connecting" src = "connecting.gif" align="right"   >
+<div id="content">
+<div class = "window">
+
+<a href="{{ url_for('sign_up') }}">Sign Up</a><br>
+<a href="{{ url_for('login_page') }}">Log In</a>
+</div>
+<div>
+<br>
+<br>
+<br>
+<img class = "connecting" src = "{{ url_for('static', filename='connecting.gif') }}" align="right">
 
 </body>
 
