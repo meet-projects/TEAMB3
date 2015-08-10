@@ -1,4 +1,5 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect
+from flask import session as web_session
 app = Flask(__name__)
 
 #SQLAlchemy stuff
@@ -65,7 +66,8 @@ def login_page():
 	if request.method == 'GET':
 		return render_template('login_page.html')
 	else:
-		pass
+		web_session['username'] = request.form['username']
+        	return redirect(url_for('view_profile'))
 		
 
 @app.route('/delete/<int:user_id>', methods = ['GET', 'POST'])
