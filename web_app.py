@@ -76,11 +76,13 @@ def login_page():
 
 @app.route('/delete/<int:user_id>', methods = ['GET', 'POST'])
 def delete_profile(user_id):
+	person = session.query(User).filter_by(id = user_id).first()
 	if request.method == 'POST':	
-		person = session.query(User).filter_by(id = user_id).first()	
 		session.delete(person)
 		session.commit()
-		return 	redirect(url_for('main_page'))
+		return redirect(url_for('main_page'))
+	else:
+		return render_template('delete_profile.html', person = person)
 
 
 if __name__ == '__main__':
