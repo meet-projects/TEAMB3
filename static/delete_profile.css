@@ -5,9 +5,9 @@ h1{
 body {background-image:url('background.jpg');}
 
 
-
-.delete_profile{
-text-align:center;
+#left_align
+{
+align:center;
 }
 
 .connect{
@@ -25,4 +25,8 @@ font-family: "Formal Script BT", Times, serif; text-align:center;}
 font-size:15px;
 vertical-align:10px;
 font-family: "Adera", Times, serif; text-align:center;
+}
+
+#delete_profile{
+   text-align:center;
 }
