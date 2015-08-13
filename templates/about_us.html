@@ -1,5 +1,43 @@
+<!DOCTYPE html>
 <html>
+<head>
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='delete_profile.css') }}">
+<title>About Us</title>
+</head>
+<style>
+.us {
+width:400px;
+height:370px;
+text-align:center;
+position:relative;
+left:650px;
+top:100px;
+}
 
+#para{
+position:relative;
 
+top:-250px;
+}
 
+</style>
+
+<div id="title">
+<img class = "connect" src = "{{ url_for('static', filename='connect.gif') }}" alt = "connecting Humans worlwide">
+
+<span id="main_header">
+	HOWDY
+</span>
+<span id="header">Connecting People Worldwide</span>
+</div>
+
+<img  class ="us" src = "{{ url_for('static', filename='IMG_5604.JPG') }}" alt = "Our Amazing Group">
+
+<div id="para">
+<p> We are HOWDY. </p>
+<p> We are here as part of an effort to make the internet a better,<br> nicer and less judgmental place. </p>
+<p> We hope you will find our social platform a place to find comfort and <br> friendships among people who share the same interests as you,<br> and not necessarily the same nationality.
+<p>We appreciate your visit! </p>
+<p>Musa, Naya, Sela, Noor and Neta </p>
+</div>
 </html>

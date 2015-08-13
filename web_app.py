@@ -55,7 +55,7 @@ def sign_up():
 
 @app.route('/edit/<int:user_id>', methods=['GET', 'POST'])
 def edit_profile(user_id):
-    inter = session.query(Interests).filter_by(user_id = user_id).first()
+    inter = session.query(Interests).filter_by(id = user_id).first()
     person = session.query(User).filter_by(id=user_id).first()
     print([inter])
     print([person])
