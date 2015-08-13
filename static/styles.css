@@ -44,7 +44,11 @@ width:100px;
 text-align:center;
 }
 
-
+#div_for_about_us{
+   width:100px;
+    height:50px;
+    text-align:center;
+}
 #div_for_sign_up{
 text-align:center;
 }

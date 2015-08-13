@@ -1,6 +1,10 @@
 
 #buttons {
 text-align:center;
+position: relative;
+            
+    top: -370px;
+          
 }
 h5{ color:white;
     text-align:center;
@@ -34,14 +38,16 @@ h5{font-family:"Arial",
 Times, serif;}
 
 #header { 
-         
-          text-align:center;
+         text-align:center;
           padding: 4px;
 	  width: 50%;}
-#interests {float:left;
+
+#interests {position: relative;
+            left: 720px;
+	    top: -450px;
             line-height:30px;
             
-            width:15%;
+            width:50%;
             height:70%;
 	    text-align:center;
 	    font-size:150%;}

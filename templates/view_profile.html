@@ -21,20 +21,18 @@ background-image: url('{{person.background}}');
 </div>
 
 <div id="head"><div id="head2"><h5> Profile Page- {{person.username}}</h5></div></div><br>
-<a href="{{ url_for('main_page') }}">Search</a><br>
-
 
 <div id="username"><h2>Username</h2></div> 
-<div id="p2"><p>{{person.username}}</p></div></br>
+<div id="p2">{{person.username}}</div></br>
 <div id="bio"><h2>Bio</h2></div>
-<div id="p4"><p>{{person.bio}}</p></div>
+<div id="p4">{{person.bio}}</div>
 <br>
 
+<div id="interests">
 <div id="header">
 <h1>Interests</h1>
 </div>
 <table border="1">
-<div id="interests">
 <table border=3 border-color=red>
 <tr><th>Favorite book</th><td>{{inter.fav_book}}</td></tr>
 <tr><th>Favorite movie</th><td>{{inter.fav_movie}}</td></tr>
@@ -43,7 +41,7 @@ background-image: url('{{person.background}}');
 <tr><th>Other</th><td>{{inter.other}}</td></tr>
 </table>
 </div>
-<br><br><br><br><br><br><br><br>
+
 <div id= "buttons">
 
 <form action = "{{ url_for('edit_profile', user_id = person.id)}}">
