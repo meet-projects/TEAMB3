@@ -21,7 +21,7 @@ background-image: url('{{person.background}}');
 </div>
 
 <div id="head"><div id="head2"><h5> Profile Page</h5></div></div><br>
-<a href="{{ url_for('main_page') }}">Search</a><br><br>
+<a href="{{ url_for('main_page') }}">Search</a><br>
 
 
 <div id="username"><h2>Username</h2></div> 
@@ -48,18 +48,24 @@ background-image: url('{{person.background}}');
 <div id="header">
 <h1>Interests</h1>
 </div>
+<table border="1">
 <div id="interests">
-<div><h7>Favorite book</h7></div><br>
-<div><h7>Favorite movie</h7></div><br>
-<div><h7>Favorite hobby</h7></div><br>
-<div><h7>Favorite song</h7></div><br>
-<div><h7>Other</h7></div><br>
+<tr>
+<td><div><h7>Favorite book</h7></div></td></tr>
+<tr><td><div><h7>Favorite movie</h7></div></td></tr>
+<tr><td><div><h7>Favorite hobby</h7></div></td></tr>
+<tr><td><div><h7>Favorite song</h7></div></td></tr>
+<tr><td><div><h7>Other</h7></div><br></td></tr>
+
 </div>
-<div id = "book"><h4>{{inter.fav_book}}</h4></div>
-<div id = "movie"><h4>{{inter.fav_movie}}</h4></div>
-<div id = "hobby"><h4>{{inter.fav_hobby}}</h4></div>
-<div id = "song"><h4>{{inter.fav_song}}</h4></div>
-<div id = "other"><h4>{{inter.other}}</h4></div>
+
+<tr><td><div id = "book"><h4>{{inter.fav_book}}</h4></div></td></tr>
+<tr><td><div id = "movie"><h4>{{inter.fav_movie}}</h4></div></td></tr>
+<tr><td><div id = "hobby"><h4>{{inter.fav_hobby}}</h4></div></td></tr>
+<tr><td><div id = "song"><h4>{{inter.fav_song}}</h4></div></td></tr>
+<tr><td><div id = "other"><h4>{{inter.other}}</h4></div></td></tr>
+</table>
+
 <br><br><br><br><br><br><br><br>
 <div id= "buttons">
 

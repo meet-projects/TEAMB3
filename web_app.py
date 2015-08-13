@@ -40,14 +40,13 @@ def sign_up():
         new_background = request.form['background']
         person = User(first_name = new_firstname, last_name = new_lastname, username = new_username, password = new_password, bio = new_bio, background = new_background)
         session.add(person)
-        session.commit()
 
         new_book = request.form['fav_book']
         new_movie = request.form['fav_movie']
         new_hobby = request.form['fav_hobby']
         new_song = request.form['fav_song']
         new_other = request.form['other']
-        inter = Interests(fav_book = new_book, fav_movie = new_movie, fav_hobby = new_hobby, fav_song = new_song, other = new_other , user_id = person.id)
+        inter = Interests(fav_book = new_book, fav_movie = new_movie, fav_hobby = new_hobby, fav_song = new_song, other = new_other)
 
         session.add(inter)
         session.commit()
