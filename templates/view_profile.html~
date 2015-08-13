@@ -48,24 +48,16 @@ background-image: url('{{person.background}}');
 <div id="header">
 <h1>Interests</h1>
 </div>
-<table>
+<table border="1">
 <div id="interests">
-<tr>
-<td><div><h7>Favorite book</h7></div></td></tr>
-<tr><td><div><h7>Favorite movie</h7></div></td></tr>
-<tr><td><div><h7>Favorite hobby</h7></div></td></tr>
-<tr><td><div><h7>Favorite song</h7></div></td></tr>
-<tr><td><div><h7>Other</h7></div><br></td></tr>
-
-</div>
-
-<tr><td><div id = "book"><h4>{{inter.fav_book}}</h4></div></td></tr>
-<tr><td><div id = "movie"><h4>{{inter.fav_movie}}</h4></div></td></tr>
-<tr><td><div id = "hobby"><h4>{{inter.fav_hobby}}</h4></div></td></tr>
-<tr><td><div id = "song"><h4>{{inter.fav_song}}</h4></div></td></tr>
-<tr><td><div id = "other"><h4>{{inter.other}}</h4></div></td></tr>
+<table border=3 border-color=red>
+<tr><th>Favorite book</th><td>{{inter.fav_book}}</td></tr>
+<tr><th>Favorite movie</th><td>{{inter.fav_movie}}</td></tr>
+<tr><th>Favorite hobby</th><td>{{inter.fav_hobby}}</td></tr>
+<tr><th>Favorite song</th><td>{{inter.fav_song}}</td></tr>
+<tr><th>Other</th><td>{{inter.other}}</td></tr>
 </table>
-
+</div>
 <br><br><br><br><br><br><br><br>
 <div id= "buttons">
 
