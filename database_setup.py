@@ -16,5 +16,13 @@ class User (Base):
 	password = Column(String(60))
 	bio = Column(String(140))
 	
+class Interests (Base):
+	__tablename__ = 'interests'
+	id = Column(Integer, primary_key=True) #the id matches the user id
+	fav_book = Column(String(60))
+	fav_movie = Column(String(60))
+	fav_hobby = Column(String(60))
+	fav_song = Column(String(60)) 
+	other = Column(String(60))
 
 	

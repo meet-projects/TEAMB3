@@ -35,14 +35,18 @@
 <h1>Interests</h1>
 </div>
 <div id="interests">
-<div><h7>Books</h7></div><br>
-<div><h7>Movies</h7></div><br>
-<div><h7>Hobbies</h7></div><br>
+<div><h7>Favorite book</h7></div><br>
+<div><h7>Favorite movie</h7></div><br>
+<div><h7>Favorite hobby</h7></div><br>
+<div><h7>Favorite song</h7></div><br>
+<div><h7>Other</h7></div><br>
 </div>
-<div><h4> I like The Kite Runner, Lookin or Alaska etc...</h4></div>
-<div><h4>Inglorious Bastards, Titanic</h4></div>
-<div><h4>Biking, Dancing</h4></div>
-<br><br><br><br><br>
+<div id = "book"><h4>{{inter.fav_book}}</h4></div>
+<div id = "movie"><h4>{{inter.fav_movie}}</h4></div>
+<div id = "hobby"><h4>{{inter.fav_hobby}}</h4></div>
+<div id = "song"><h4>{{inter.fav_song}}</h4></div>
+<div id = "other"><h4>{{inter.other}}</h4></div>
+<br><br><br><br><br><br>
 <div id= "buttons">
 
 <form action = "{{ url_for('edit_profile', user_id = person.id)}}">
