@@ -1,12 +1,26 @@
 
-body {background-image:url('background.jpg');}
-
-#buttons{
+#buttons {
 text-align:center;
 }
 h5{ color:white;
     text-align:center;
     font-size:300%;}
+.connect{
+width:150px;
+height:120px;
+}
+
+#main_header{
+font-size:20px;
+vertical-align:50px;
+font-family: "Formal Script BT", Times, serif; text-align:center;}
+
+#headers{
+font-size:15px;
+vertical-align:10px;
+font-family: "Adera", Times, serif; text-align:center;
+}
+
 h1{
   color:white;
 
@@ -19,19 +33,19 @@ h5{font-family:"Arial",
 
 Times, serif;}
 
-#header { background: black;
+#header { 
          
           text-align:center;
           padding: 4px;
 	  width: 50%;}
 #interests {float:left;
             line-height:30px;
-            background: gray;
+            
             width:15%;
             height:70%;
 	    text-align:center;
 	    font-size:150%;}
-#choose {background:white;
+#choose {
          color:solid black;
          font-family: "Arial", serif;
          float:left;
@@ -40,22 +54,22 @@ Times, serif;}
 	 text-align:center;
 	 width:35%;}
 
-#bio {background:white;
+#bio {
       font-size:100%;
       width:15%;}
 
-#username {background:white;
+#username {
 	   font-size:100%;
 	   width:15%;
            color:white;}
-#p2 {background:#D1D1D1;
+#p2 {
      width:15%;
 line-height:450%;}
 para {text-align:center;}
 h7{text-align:center;}
 h4{padding:5px;}
 
-#p4 {background:#D1D1D1;
+#p4 {font-size:100%
      width:40%;
      line-height:1000%;
      }
@@ -65,9 +79,9 @@ h2{font-size:140%;
 
 #edit {padding:15px;}
 #signout {padding:15px;}
-#head {background-image:url('blues.jpg');
+#head {
        line-height:500%;}
-#head2 {background-image:url('blues.jpg');
+#head2 {
 	width:25%;
 	text-align:center;
 	margin: 0 auto;

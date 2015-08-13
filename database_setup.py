@@ -15,6 +15,7 @@ class User (Base):
 	username = Column(String(60))
 	password = Column(String(60))
 	bio = Column(String(140))
+	background = Column(String(500))
 	
 class Interests (Base):
 	__tablename__ = 'interests'

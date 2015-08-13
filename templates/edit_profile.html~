@@ -5,16 +5,32 @@
 <title>edit</title>
 </head>
 <body>
+<body>
 
-<header>
+<div id="title">
+<img class = "connect" src = "{{ url_for('static', filename='connect.gif') }}" alt = "connecting Humans worlwide">
+
+<span id="main_header">
+	HOWDY
+</span>
+<span id="header">Connecting People Worldwide</span>
+</div>
+<div id=edit_profile>
 <h1>Edit Your Profile</h1>
 
-</header>
-<form method = 'POST'>
-Username:<input type="text" name="username"><br>
-Password:<input type="password" name="password"><br>
-Bio:<input type="text" name="bio"><br><br>
 
+<form method = 'POST'>
+Username:<input type="text" name="username"><br><br>
+Password:<input type="password" name="password"><br><br>
+Bio:<input type="text" name="bio"><br><br>
+<br>
+Favorite book:<input type="text" name="fav_book"><br><br>
+Favorite movie:<input type="text" name="fav_movie"><br><br>
+Favorite hobby:<input type="text" name="fav_hobby"><br><br>
+Favorite song:<input type="text" name="fav_song"><br><br>
+Other:<input type="text" name="other"><br><br>
+<br>
 <input type="submit" value="Submit">
+</div>
 </form>
 </html>

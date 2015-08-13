@@ -37,7 +37,8 @@ def sign_up():
         new_username = request.form['username']
         new_password = request.form['password']
         new_bio = request.form['bio']
-        person = User(first_name = new_firstname, last_name = new_lastname, username = new_username, password = new_password, bio = new_bio)
+        new_background = request.form['background']
+        person = User(first_name = new_firstname, last_name = new_lastname, username = new_username, password = new_password, bio = new_bio, background = new_background)
         
         new_book = request.form['fav_book']
         new_movie = request.form['fav_movie']
@@ -62,10 +63,12 @@ def edit_profile(user_id):
         new_username = request.form['username']
         new_password = request.form['password']
         new_bio = request.form['bio']
+        new_background = request.form['background']
 
         person.username = new_username
         person.password = new_password
         person.bio = new_bio
+        person.background = new_background
 
         new_book = request.form['fav_book']
         new_movie = request.form['fav_movie']
