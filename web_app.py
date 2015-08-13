@@ -39,15 +39,16 @@ def sign_up():
         new_bio = request.form['bio']
         new_background = request.form['background']
         person = User(first_name = new_firstname, last_name = new_lastname, username = new_username, password = new_password, bio = new_bio, background = new_background)
-        
+        session.add(person)
+        session.commit()
+
         new_book = request.form['fav_book']
         new_movie = request.form['fav_movie']
         new_hobby = request.form['fav_hobby']
         new_song = request.form['fav_song']
         new_other = request.form['other']
-        inter = Interests(fav_book = new_book, fav_movie = new_movie, fav_hobby = new_hobby, fav_song = new_song, other = new_other)
+        inter = Interests(fav_book = new_book, fav_movie = new_movie, fav_hobby = new_hobby, fav_song = new_song, other = new_other , user_id = person.id)
 
-        session.add(person)
         session.add(inter)
         session.commit()
 
@@ -55,10 +56,12 @@ def sign_up():
 
 @app.route('/edit/<int:user_id>', methods=['GET', 'POST'])
 def edit_profile(user_id):
-    inter = session.query(Interests).filter_by(id = user_id).first()
+    inter = session.query(Interests).filter_by(user_id = user_id).first()
     person = session.query(User).filter_by(id=user_id).first()
+    print([inter])
+    print([person])
     if request.method == 'GET':
-        return render_template('edit_profile.html', person = person)
+        return render_template('edit_profile.html', person = person , interests = inter)
     else:
         new_username = request.form['username']
         new_password = request.form['password']

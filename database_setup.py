@@ -20,6 +20,8 @@ class User (Base):
 class Interests (Base):
 	__tablename__ = 'interests'
 	id = Column(Integer, primary_key=True) #the id matches the user id
+	user_id = Column(Integer, ForeignKey("user.id"))
+	user = relationship(User)
 	fav_book = Column(String(60))
 	fav_movie = Column(String(60))
 	fav_hobby = Column(String(60))
