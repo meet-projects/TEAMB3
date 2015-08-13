@@ -17,6 +17,10 @@ session = DBSession()
 def main_page():
     return render_template('main_page.html')
 
+@app.route('/about_us')
+def about_us():
+    return render_template('about_us.html')
+
 @app.route('/profile/<int:user_id>')
 def view_profile(user_id):
     inter = session.query(Interests).filter_by(id = user_id).first()
