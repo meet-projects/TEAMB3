@@ -43,8 +43,8 @@
 <div><h4>Inglorious Bastards, Titanic</h4></div>
 <div><h4>Biking, Dancing</h4></div>
 <br><br><br><br><br><br>
- 
-<div id = "left_align">
+<div id= "buttons">
+
 <form action = "{{ url_for('edit_profile', user_id = person.id)}}">
 <input type = "submit" value = "Edit" id = "LOGIN_PAGE">
 </form>

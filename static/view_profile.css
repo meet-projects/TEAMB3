@@ -1,3 +1,6 @@
+
+body {background-image:url('background.jpg');}
+
 #buttons{
 text-align:center;
 }
@@ -59,12 +62,12 @@ h4{padding:5px;}
 h2{font-size:140%;
    color:black;}   
 
-body{background-image:url('tree.png');}
+
 #edit {padding:15px;}
 #signout {padding:15px;}
-#head {background-image:url('black.jpg');
+#head {background-image:url('blues.jpg');
        line-height:500%;}
-#head2 {background:black;
+#head2 {background-image:url('blues.jpg');
 	width:25%;
 	text-align:center;
 	margin: 0 auto;
